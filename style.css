@@ -1,0 +1,114 @@
+/* style.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  font-family: Arial, sans-serif;
+  background-color: black;
+}
+
+.sidebar {
+  width: 120px;
+  background: #2c2c2c;
+  color: white;
+  padding: 20px 15px;
+  height: 100vh;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo-container {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 80px; /* 로고 크기 조정 */
+  height: auto;
+  cursor: pointer;
+}
+
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.sidebar li.active {
+  background: #555;
+  font-weight: bold;
+  /* color: yellow; */
+}
+
+
+.sidebar li:hover {
+  background: #444;
+  transform: scale(1.05);
+}
+
+.sidebar li i {
+  font-size: 18px;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  margin-top: 80px;
+}
+
+
+.text-bar {
+  width: 250px;
+  background: #1b1717;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.text-bar:hover {
+  background: #ddd;
+  color: black;
+}
+
+.text-bar.highlight {
+  background: #d1340d;
+  font-weight: bold;
+}
+
+.text-content {
+  display: none;
+  width: 230px;
+  padding: 10px;
+  border-radius: 12px;
+  background: #eaeaea;
+  border-left: 4px solid #333;
+  margin-top: 5px;
+  margin-left: 20px;
+}
+
+.text-content.highlight {
+  color: red;
+}
